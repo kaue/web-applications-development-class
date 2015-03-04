@@ -1,0 +1,24 @@
+body{
+    background-color: #000000;
+    background-image: url('../img/imagem_simples.jpg');
+    color: #ffff00;
+}
+a{
+    color: #ffffff;
+}
+p{
+    font-family: "Times New Roman";
+    font-size: 105%;    
+}
+p.Negrito{
+    font-weight: bold;
+}
+p.Italico{
+    font-style: italic;
+}
+p.Arial{
+    font-family: "Arial";
+}
+p.Lucida{
+    font-family:"Lucida Handwriting";
+}
