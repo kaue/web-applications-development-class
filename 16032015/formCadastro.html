@@ -1,0 +1,50 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Cadastramento de cliente</title>
+    <meta charset="utf-8">    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        label{width: 125px;text-transform: uppercase;display: inline-block;}        
+    </style>
+</head>
+<body>
+    <form method="POST" action="cadastro.php">
+        <br>
+        <hr>
+        <label for="usuario"> Usuario: </label>
+        <input type="text" name="nome" placeholder="Digite o seu login" autofocus required><br>
+        <label for="Senha"> Senha: </label>
+        <input type="password" name="cpf" placeholder="Digite sua senha" required><br>
+        <br>
+        <hr>
+        <br>
+        <label for="nome"> Nome: </label>
+        <input type="text" name="nome" placeholder="Digite o seu nome" required><br>
+        <label for="cpf"> CPF: </label>
+        <input type="text" name="cpf" placeholder="Digite o seu CPF" pattern="^\d{3}\.\d{3}\.\d{3}\-\d{2}$|\d{11}" maxlength="14" autocomplete="off" required><br>
+        <label for="rg"> RG: </label>
+        <input type="text" name="rg" placeholder="Digite o seu RG" autocomplete="off" required><br>
+        <label for="endereco"> Endereço: </label>
+        <input type="text" name="endereco" placeholder="Digite o seu endereço" required><br>
+        <label for="estado"> Estado: </label>
+        <select name="estado" required></select><br>
+        <label for="tipoPessoa"> Tipo: </label>
+        <select name="tipoPessoa" required></select><br>
+        <label for="sexo"> Sexo: </label><br>
+        <label><input type="radio" name="sexo" checked value="H"> Homem</label>
+        <label><input type="radio" name="sexo" value="M"> Mulher</label><br>
+        <label for="estadoCivil"> Estado Civil: </label>
+        <div class="estadoCivil">             
+        </div>
+        <hr>
+        <input type= "reset" value="Apaga tudo">
+        <input type= "submit" value="Enviar">
+
+    </form>
+</body>
+</html>
