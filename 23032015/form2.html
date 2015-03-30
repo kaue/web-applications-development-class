@@ -1,0 +1,61 @@
+<!--
+To change this template use Tools | Templates.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Formulários II</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form enctype="multipart/form-data" method="post" action="trata_form2.php">
+            <datalist id="list_times">
+                <option value="São Paulo">
+                <option value="Palmeiras">
+                <option value="Santos">
+                <option value="Flamengo">
+            </datalist>
+            <label for="id_times"> Escolha ou Escreva o seu time:
+            </label>
+            <input type = "text" id = "id_times"
+                   name = "time" list = "list_times">
+            <br>
+            <label for="id_profissao"> Escolha a sua profissão:</label>
+            <select id="id_profissao" name="profissao" size="2">
+                <option selected> Analista de Sistemas</option>
+                <option> Medico</option>
+                <option> Advogado</option>
+                <option> Cientista</option>
+                <option> Pesquisador</option>
+            </select>
+            <br>
+            <label for="id_mes"> Escolha a os meses:</label>
+            <select id="id_mes" name="meses[]" size="5" multiple>
+                <option> Janeiro</option>
+                <option> Fevereiro</option>
+                <option selected> Março</option>
+                <option> Abril</option>
+                <option> Maio</option>
+                <option> Junho</option>
+                <option selected> Julho</option>
+                <option> Agosto</option>
+                <option> Setembro</option>
+                <option> Outubro</option>
+                <option> Novembro</option>
+                <option> Dezembro</option>
+            </select>
+            <br>
+            <label for="id_comentario"> Escreva um comentario:</label>
+            <textarea id="id_comentario" name="comentario" rows=5 cols=45 placeholder="Escreva aqui o seu comentario!"></textarea>
+            <br>
+            <label for="id_comentario"> Envie um arquivo:</label>
+            <input type="file" name="arquivo" size="140">
+            <br>
+            <br>
+            <input type= "reset" value="Apaga tudo">
+            <input type= "submit" value="Enviar">
+
+        </form>
+
+    </body>
+</html>
