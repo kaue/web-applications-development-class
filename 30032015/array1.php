@@ -10,6 +10,4 @@ unset($vetor[12]);
 unset($vetor["xyz"]);
 
 var_dump($vetor);
-
-
 ?>
